@@ -2,6 +2,7 @@
 Various small automation tasks for a linux workstation primarily using systemd and docker
 
 ## Tasks
+- **sleep-at-night**: Suspend the system in the evening once it is idle, and wake it up on the next morning
 - **update-docker-images**: Regular, automated updates for a configurable list of docker images 
 
 ## Warning
@@ -15,4 +16,5 @@ You can install the tasks individually by running
 ```bash
 ./install.sh
 ```
-within its folder. The scripts usually require root privileges.
+within its folder. The scripts usually require root privileges. You will likely have to adapt
+them here and there according to your own preferences.

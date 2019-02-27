@@ -1,0 +1,6 @@
+[Unit]
+Description=suspend the system over night
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sleep-at-night
