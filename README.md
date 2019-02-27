@@ -8,3 +8,10 @@ Do not execute any install script with sudo before you checked it line by line!
 
 ## Tasks
 - **update-docker-images**: Regular, automated updates for a configurable list of docker images 
+
+## Installation
+You can install the tasks individually by running
+```bash
+sudo ./install.sh
+```
+within its folder.
