@@ -12,6 +12,6 @@ Do not execute any install script with sudo before you checked it line by line!
 ## Installation
 You can install the tasks individually by running
 ```bash
-sudo ./install.sh
+./install.sh
 ```
-within its folder.
+within its folder. The scripts usually require root privileges.
