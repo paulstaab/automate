@@ -1,0 +1,6 @@
+[Unit]
+Description=update of docker images
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/update-docker-images

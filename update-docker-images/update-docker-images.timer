@@ -1,0 +1,9 @@
+[Unit]
+Description=update of docker images
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
