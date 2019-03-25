@@ -1,7 +1,7 @@
 #!/bin/sh -
 
 # Only suspend the system in the evening
-if [ $(date +"%H") -le 18 ]; then
+if [ $(date +"%H") -le 17 ]; then
 	echo "Not suspending system because it is too early"
 	exit 0
 fi
