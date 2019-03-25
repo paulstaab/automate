@@ -2,7 +2,7 @@
 Description=timer to suspend the system automatically over night
 
 [Timer]
-OnCalendar=*-*-* 18..23:00/15:00
+OnCalendar=*-*-* 00..06,18..23:00/15:00
 Persistent=false
 
 [Install]

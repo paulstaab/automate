@@ -1,7 +1,8 @@
 #!/bin/sh -
 
 # Only suspend the system in the evening
-if [ $(date +"%H") -le 17 ]; then
+HOUR=$(date +"%H")
+if [ ${HOUR} -le 17 -a ${HOUR} -ge 7 ]; then
 	echo "Not suspending system because it is too early"
 	exit 0
 fi
@@ -14,6 +15,12 @@ if [ ${load} \> 0.3 ]; then
 	exit 0
 fi
 
+if [ ${HOUR} -le 7 ]; then
+	WAKE_UP_TIME=$(date +%s -d '8:00')
+else
+	WAKE_UP_TIME=$(date +%s -d 'tomorrow 8:00')
+fi
+
 # Suspend and wake up on 8:00 am next morning
-rtcwake -m mem -t $(date +%s -d 'tomorrow 8:00')
+rtcwake -m mem -t ${WAKE_UP_TIME}
 
