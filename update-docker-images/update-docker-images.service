@@ -1,5 +1,6 @@
 [Unit]
 Description=update of docker images
+ConditionACPower=true
 
 [Service]
 Type=simple
